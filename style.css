@@ -1,0 +1,31 @@
+
+a:link{color:rgba(33, 73, 121, 1.0);}
+
+a:visited{color:rgb(111, 159, 216, 1.0);}
+
+ .navbar {
+    background-color: rgba(0, 0, 0, 1.0);
+    overflow: hidden;
+    text-align: center;
+}
+/*style for links*/
+.navbar a {
+    display: inline-block;
+    padding: 14px 20px;
+    color: rgba(255, 255, 255, 1.0);
+    text-decoration: none;
+    transition: background-color 0.1s;
+    font-family: bilo, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#main {
+  max-width: 600px;
+  margin: 0 auto; 
+}
