@@ -3,7 +3,7 @@ body {
   background:rgba(0, 0, 0, 1.0);
   color:rgba(255, 255, 255, 1.0);
   font-family: bilo, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 100px;
@@ -28,7 +28,7 @@ h3 {
   font-family: bilo, sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 25px;
+  font-size: 30px;
   margin: 5px;
 }
 
@@ -36,8 +36,8 @@ h4{
   font-family: bilo, sans-serif;
   font-weight: 700;
   font-style: normal; 
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 24px;
+  margin-top: 20px;
   margin-bottom: 5px;
   margin-right: 5px;
 }
@@ -116,12 +116,12 @@ section {
 .screenshot_container {
   display: inline-block;
   vertical-align: top;
-  width: 16.5%;
+  width: 15%;
   padding: 10px;
 }
 
 .screenshot_container img {
-  width: 350px;
+  width: 325px;
   height: auto;
 }
 
@@ -137,7 +137,8 @@ section {
   font-weight: 800;
   border-radius: 9px;
   padding: 10px;
-  margin: 10px;
+  margin-right: 5px;
+  margin-top: 2px;
 }
 
 .info {
