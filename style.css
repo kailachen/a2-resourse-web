@@ -58,7 +58,7 @@ section {
 #homepage {
   padding-top: 50px;
   position: absolute;
-  top: 50%; /* adjust top position */
+  top: 5%; /* adjust top position */
   left: 50%; /* adjust left position */
   transform: translate(-50%, -50%); /* center the title */
   text-align: center;
@@ -88,13 +88,20 @@ section {
 }
 
 .navigationbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 1.0);
 }
 
 #navigationhomepage {
   padding-top: 650px;
   text-align: left;
+}
+
+#imagehomepage {
+  max-width: 1000px;
+  align: right;
+  margin: 20%;
+  transition: 3s;
 }
 
 

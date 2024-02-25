@@ -26,7 +26,17 @@
 			</nav>
 
 			<section> 
-				<img src="transformers-lastknight-movie-screencaps.com-15106.webp" height="750px" align="right"/>
+				<img src="" id="imagehomepage"/>
+				
+				<!--used this tutorial- https://www.youtube.com/watch?v=rD2Tnc-W31A -->
+				<script type="text/javascript">
+					let image = document.getElementById('imagehomepage');
+					let images = ['transformers-lastknight-movie-screencaps.com-15106.webp','9960688.jpg','transformers-2007.jpeg']
+					setInterval(function(){
+						let random = Math.floor (Math.random() * 3)
+						image.src = images[random];
+					}, 750)
+				</script>
 			</section>
 		</div>
 	</body>
