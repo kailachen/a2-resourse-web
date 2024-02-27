@@ -1,4 +1,9 @@
 
+@font-face{
+  ;font-family:TransformersFont;
+  src:url(fonts/TransformersMovie.ttf);
+}
+
 body {
   background:rgba(0, 0, 0, 1.0);
   color:rgba(255, 255, 255, 1.0);
@@ -37,7 +42,7 @@ h4{
   font-weight: 700;
   font-style: normal; 
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 5px;
 }
@@ -46,33 +51,26 @@ p {
   margin: 0px;
 }
 
-nav {
-  position: absolute;
-  left: 0px;
-  width: 500px;
-}
 section {
-  margin-left: 200px;
+  margin-left: 350px;
+  max-width: 550px;
 }
 
 #homepage {
-  padding-top: 50px;
   position: fixed;
-  top: 5%;
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  text-align: center;
-  color: rgba(255, 255, 255, 1.0);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px; 
-}
+  padding-top: 650px;
+  text-align: left;
+  font-family: TransformersFont;
+ }
 
-.navigationbar {
+/*navatation bar*/
+.navigationbar /*bar itself*/ {
     text-align: right;
     margin-right: 50px;
+    font-family: TransformersFont;
 }
 
-/* for navigation buttons*/
+/* for the buttons */
 .navigationbar a {
     display: inline-block;
     padding-top: 10px;
@@ -82,9 +80,10 @@ section {
     color: rgba(255, 255, 255, 1.0);
     text-decoration: none;
     transition: background-color 0.1s;
-    font-family: bilo, sans-serif;
     font-weight: 800;
     font-style: normal;
+    font-family: TransformersFont, sans-serif;
+    font-size: 20px;
 }
 
 .navigationbar a:hover {
@@ -92,12 +91,7 @@ section {
     color: rgba(0, 0, 0, 1.0);
 }
 
-#navigationhomepage {
-  position: fixed;
-  padding-top: 650px;
-  text-align: left;
-}
-
+/*the changing image↓*/
 * {
   box-sizing: border-box
 }
@@ -117,7 +111,6 @@ section {
   vertical-align: middle;
 }
 
-
 .fade {
   animation-name: fade;
   animation-duration: 3s;
@@ -127,7 +120,9 @@ section {
   from {opacity: 0}
   to {opacity: 1}
 }
+/*the changing images↑*/
 
+/*movie page↓*/
 .relative {
   max-width: 900px;
   margin: 0 auto; 
@@ -143,23 +138,24 @@ section {
   margin: auto;
   max-width:900px;
 }
+
 .screenshot_container {
   display: inline-block;
   vertical-align: top;
-  width: 15%;
+  max-width: 850px;
   padding: 10px;
 }
 
 .screenshot_container img {
-  width: 325px;
+  max-width: 325px;
   height: auto;
 }
 
 .movie_number {
-  color: #fff;
-  background: #393939;
+  color: rgba(255, 255, 255, 1.0);
+  background: rgba(60, 60, 60, 1.0);
   width: 50px;
-  height:35px;
+  height:50px;
   text-align: center;
   float: right;
   vertical-align: center;
@@ -170,16 +166,25 @@ section {
   margin-right: 5px;
   margin-top: 2px;
 }
-
-.info {
-  float: left;
-  font-size: 16px;
-  font-weight: 800;
-  border-radius: 9px;
-  padding: 10px;
+.info_container {
+  display: inline-block;
+  vertical-align: top;
+  align-content: left;
+  padding-left: 10px;
 }
 
 .column {
   display: inline-block;
   vertical-align: top;
+}
+/*movie page↑*/
+
+/*songs page*/
+
+.box {
+  float: left;
+  width: 290px;
+  height: 100px;
+  border: solid, 2px;
+  border-color: rgba(255, 255, 255, 1.0);
 }
