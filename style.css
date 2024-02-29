@@ -51,27 +51,28 @@ p {
   margin: 0px;
 }
 
-section {
-  margin-left: 350px;
-  max-width: 550px;
-}
+a:link{color:rgba(255, 255, 255, 1.0);}
+
+a:visited{color:rgb(255, 255, 255, 1.0);}
 
 #homepage {
   position: fixed;
-  padding-top: 650px;
+  padding-top: 550px;
+  padding-left: 75px;
   text-align: left;
   font-family: TransformersFont;
- }
-
-/*navatation bar*/
-.navigationbar /*bar itself*/ {
-    text-align: right;
-    margin-right: 50px;
-    font-family: TransformersFont;
 }
 
+/*navatation bar*/
+  nav /*bar itself*/ {
+    font-family: TransformersFont;
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+  }
+
 /* for the buttons */
-.navigationbar a {
+  nav a {
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -84,107 +85,153 @@ section {
     font-style: normal;
     font-family: TransformersFont, sans-serif;
     font-size: 20px;
-}
+  }
 
-.navigationbar a:hover {
+  nav a:hover {
     background-color: rgba(255, 255, 255, 0.8);
     color: rgba(0, 0, 0, 1.0);
-}
+  }
 
-/*the changing image↓*/
-* {
-  box-sizing: border-box
-}
+/*↓the changing image↓*/
+  * {
+    box-sizing: border-box
+  }
 
-.imageslides {
-  display: none;
-}
+  .imageslides {
+    display: none;
+  }
 
-.image-slideshow {
-  max-width: 1250px;
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-}
+  .image-slideshow {
+    max-width: 1250px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    }
 
-.imagehomepage img {
-  vertical-align: middle;
-}
+  .imagehomepage img {
+    vertical-align: middle;
+  }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 3s;
-}
+  .fade {
+    animation-name: fade;
+    animation-duration: 5s;
+  }
 
-@keyframes fade {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-/*the changing images↑*/
+  @keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+/*↑the changing images↑*/
 
-/*movie page↓*/
-.relative {
-  max-width: 900px;
-  margin: 0 auto; 
-}
+/*↓movie page↓*/
+  .relative {
+    max-width: 900px;
+    margin: 0 auto; 
+  }
 
-.container {
-  position: relative;
-  margin: 50px;
-}
+  .container {
+    position: relative;
+    margin: 50px;
+  }
 
-.movie_container {
-  position: relative;
-  margin: auto;
-  max-width:900px;
-}
+  .movie_container {
+    position: relative;
+    margin: auto;
+    max-width:900px;
+  }
 
-.screenshot_container {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 850px;
-  padding: 10px;
-}
+  .screenshot_container {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 850px;
+    padding: 10px;
+  }
 
-.screenshot_container img {
-  max-width: 325px;
-  height: auto;
-}
+  .screenshot_container img {
+    max-width: 325px;
+    height: auto;
+  }
 
-.movie_number {
-  color: rgba(255, 255, 255, 1.0);
-  background: rgba(60, 60, 60, 1.0);
-  width: 50px;
-  height:50px;
-  text-align: center;
-  float: right;
-  vertical-align: center;
-  font-size: 24px;
-  font-weight: 800;
-  border-radius: 9px;
-  padding: 10px;
-  margin-right: 5px;
-  margin-top: 2px;
-}
-.info_container {
-  display: inline-block;
-  vertical-align: top;
-  align-content: left;
-  padding-left: 10px;
-}
+  .movie_number {
+    color: rgba(255, 255, 255, 1.0);
+    background: rgba(60, 60, 60, 1.0);
+    width: 50px;
+    height:50px;
+    text-align: center;
+    float: right;
+    vertical-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 9px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 2px;
+  }
 
-.column {
-  display: inline-block;
-  vertical-align: top;
-}
-/*movie page↑*/
+  .info_container {
+    display: inline-block;
+    vertical-align: top;
+    align-content: left;
+    padding-left: 10px;
+  }
+
+  .column {
+    display: inline-block;
+    vertical-align: top;
+  }
+/*↑movie page↑*/
 
 /*songs page*/
 
-.box {
-  float: left;
-  width: 290px;
-  height: 100px;
-  border: solid, 2px;
-  border-color: rgba(255, 255, 255, 1.0);
+#all-songs{
+  display:block;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.movietitle-section {
+  max-width: 900px;
+  margin: auto;
+}
+
+.songs-section {
+  height:auto;
+  margin:auto;
+  max-width:920px;
+  justify-content: center;
+  display:flex;
+  flex-wrap:wrap;
+  padding-bottom: 30px;
+}
+
+.song-box {
+  width: 285px;
+  overflow: auto;
+  border:solid white 2px;
+  margin: 10px;
+}
+
+.song-box img {
+  display: inline-block;
+  align-content: left;
+  max-height: 100px;
+  padding: 10px;
+}
+
+.song-box-info {
+  display: inline-block;
+  vertical-align: top;
+  align-content: left;
+  max-width: 165px;
+  padding-top: 10px;
+}
+
+.song-box a {
+  text-decoration: none;
+}
+
+.song-box:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 1.0);
+  border:solid black 2px;
 }
