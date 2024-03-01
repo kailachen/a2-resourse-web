@@ -59,14 +59,6 @@ a:link{
 a:visited{color:rgb(255, 255, 255, 1.0);}
 
 
-#homepage {
-  position: fixed;
-  padding-top: 550px;
-  padding-left: 75px;
-  text-align: left;
-  font-family: TransformersFont;
-}
-
 /*----------------------------------------------------navatation bar----------------------------------------------------*/
   nav /*bar itself*/ {
     font-family: TransformersFont;
@@ -97,24 +89,29 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
     color: rgba(0, 0, 0, 1.0);
   }
 
+/*----------------------------------------------------transformers----------------------------------------------------*/
+#homepage {
+  position: fixed;
+  padding-top: 600px;
+  padding-left: 75px;
+  text-align: left;
+  font-family: TransformersFont;
+}
+
 /*----------------------------------------------------changing images----------------------------------------------------*/
   * {
     box-sizing: border-box
   }
 
-  .imageslides {
-    display: none;
-  }
-
   .image-slideshow {
-    max-width: 1250px;
     position: fixed;
-    bottom: 25px;
+    bottom: 130px;
     right: 25px;
     }
 
-  .imagehomepage img {
+  .image img {
     vertical-align: middle;
+    max-width: 1250px;
   }
 
   .fade {
