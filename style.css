@@ -18,7 +18,7 @@ h1 {
   font-family: bilo, sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 h2 {
@@ -51,9 +51,13 @@ p {
   margin: 0px;
 }
 
-a:link{color:rgba(255, 255, 255, 1.0);}
+a:link{
+  color:rgba(255, 255, 255, 1.0);
+  text-decoration: none;
+}
 
 a:visited{color:rgb(255, 255, 255, 1.0);}
+
 
 #homepage {
   position: fixed;
@@ -63,7 +67,7 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
   font-family: TransformersFont;
 }
 
-/*navatation bar*/
+/*----------------------------------------------------navatation bar----------------------------------------------------*/
   nav /*bar itself*/ {
     font-family: TransformersFont;
     text-align: right;
@@ -85,6 +89,7 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
     font-style: normal;
     font-family: TransformersFont, sans-serif;
     font-size: 20px;
+    letter-spacing: 1px;
   }
 
   nav a:hover {
@@ -92,7 +97,7 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
     color: rgba(0, 0, 0, 1.0);
   }
 
-/*↓the changing image↓*/
+/*----------------------------------------------------changing images----------------------------------------------------*/
   * {
     box-sizing: border-box
   }
@@ -118,12 +123,12 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
   }
 
   @keyframes fade {
-    from {opacity: 0}
-    to {opacity: 1}
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
   }
-/*↑the changing images↑*/
 
-/*↓movie page↓*/
+/*----------------------------------------------------movie page----------------------------------------------------*/
   .relative {
     max-width: 900px;
     margin: 0 auto; 
@@ -179,9 +184,26 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
     display: inline-block;
     vertical-align: top;
   }
-/*↑movie page↑*/
 
-/*songs page*/
+  .movietitle:hover {
+    text-decoration: underline;
+  }
+
+  .preview-box {
+    display: none; /* Initially hidden */
+    background-color: rgba(160, 160, 160, 1.0);
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 400px;
+    padding: 10px;
+    overflow: auto;
+  }
+
+  .preview-text:hover + .preview-box {
+      display: block;
+  }
+
+/*----------------------------------------------------songs page----------------------------------------------------*/
 
 #all-songs{
   display:block;
@@ -190,6 +212,12 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
 }
 
 .movietitle-section {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.soundtrack-section {
   max-width: 900px;
   margin: auto;
 }
@@ -201,7 +229,7 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
   justify-content: center;
   display:flex;
   flex-wrap:wrap;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .song-box {
@@ -224,10 +252,6 @@ a:visited{color:rgb(255, 255, 255, 1.0);}
   align-content: left;
   max-width: 165px;
   padding-top: 10px;
-}
-
-.song-box a {
-  text-decoration: none;
 }
 
 .song-box:hover {
